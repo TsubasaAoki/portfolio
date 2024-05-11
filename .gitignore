@@ -1,0 +1,8 @@
+config/app_local.php
+logs/*
+!logs/.gitkeep
+tmp/*
+!tmp/.gitkeep
+vendor/*
+config/Migrations/schema-dump-default.lock
+config/const_local.php

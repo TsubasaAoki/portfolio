@@ -1,0 +1,71 @@
+/* ----------------------------------------------------------------
+Colour Palette
+---------------------------------------------------------------- */
+:root {
+  --color-slate-50:  #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+  --color-slate-950: #020617;
+}
+
+/* ----------------------------------------------------------------
+  Base & Override (normalize.min, milligram.min, cake)
+---------------------------------------------------------------- */
+body {
+  background-color: var(--color-slate-100);
+}
+
+/* Forms */
+input[type='email'], input[type='number'], input[type='password'], input[type='search'], input[type='tel'], input[type='text'], input[type='url'], input[type='color'], input[type='date'], input[type='month'], input[type='week'], input[type='datetime'], input[type='datetime-local'], input:not([type]), textarea, select {
+  background-color: white;
+  border: 0.1rem solid var(--color-slate-300);
+}
+input[type='email']:focus, input[type='number']:focus, input[type='password']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='text']:focus, input[type='url']:focus, input[type='color']:focus, input[type='date']:focus, input[type='month']:focus, input[type='week']:focus, input[type='datetime']:focus, input[type='datetime-local']:focus, input:not([type]):focus, textarea:focus, select:focus {
+  border-color: var(--color-slate-400);
+}
+input[type='email']::placeholder, input[type='number']::placeholder, input[type='password']::placeholder, input[type='search']::placeholder, input[type='tel']::placeholder, input[type='text']::placeholder, input[type='url']::placeholder, input[type='color']::placeholder, input[type='date']::placeholder, input[type='month']::placeholder, input[type='week']::placeholder, input[type='datetime']::placeholder, input[type='datetime-local']::placeholder, input:not([type])::placeholder, textarea::placeholder, select::placeholder {
+  color: var(--color-slate-400);
+}
+.button, button, input[type='button'], input[type='reset'], input[type='submit'] {
+  background-color: var(--color-slate-800);
+  border: 0.1rem solid var(--color-slate-800);
+  color: var(--color-slate-100);
+}
+.button:focus, .button:hover, button:focus, button:hover, input[type='button']:focus, input[type='button']:hover, input[type='reset']:focus, input[type='reset']:hover, input[type='submit']:focus, input[type='submit']:hover {
+  background-color: var(--color-slate-900);
+  border-color: var(--color-slate-900);
+  color: var(--color-slate-100);
+}
+.button[disabled]:focus, .button[disabled]:hover, button[disabled]:focus, button[disabled]:hover, input[type='button'][disabled]:focus, input[type='button'][disabled]:hover, input[type='reset'][disabled]:focus, input[type='reset'][disabled]:hover, input[type='submit'][disabled]:focus, input[type='submit'][disabled]:hover {
+  background-color: var(--color-slate-800);
+  border-color: var(--color-slate-800);
+}
+
+/* ----------------------------------------------------------------
+  Font
+---------------------------------------------------------------- */
+.noto-sans-jp-thin {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+.noto-sans-jp-regular {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.noto-sans-jp-bold {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
