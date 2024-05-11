@@ -128,7 +128,10 @@ hr {
 .language_and_framework > p {
   margin: 3rem 0 1rem 0;
 }
-.now_learning > img { width: 5vw; }
+.now_learning > img {
+  width: 5vw;
+  max-width: 75px;
+}
 @media (max-width: 768px) {
   .language_and_framework img { width: 15vw; }
   .now_learning > img {
